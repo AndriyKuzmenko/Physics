@@ -2,6 +2,7 @@ package com.example.physics;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -26,7 +27,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
     {
-        menu.add("Credits");
+        menu.add(Languages.credits);
         menu.add("English");
         menu.add("עברית");
 
@@ -39,6 +40,8 @@ public class MainActivity extends AppCompatActivity
 
         if(name.equals(Languages.credits))
         {
+            Intent si=new Intent(this, CreditsActivity.class);
+            startActivity(si);
             return true;
         }
         else if(name.equals("English"))
