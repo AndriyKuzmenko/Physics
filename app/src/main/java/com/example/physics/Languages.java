@@ -32,6 +32,7 @@ public class Languages
     public static String uranus;
     public static String neptune;
     public static String pluto;
+    public static String[] planets={mercury,venus,earth,moon,mars,phobos,deimos,jupiter,ganymede,callisto,io,europa,himalia,amalthea,saturn,titan,rhea,iapetus,dione,tethys,uranus,neptune,pluto};
 
     public static void toEnglish()
     {
