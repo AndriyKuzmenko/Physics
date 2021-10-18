@@ -31,7 +31,7 @@ public class Languages
     public static String tethys;
     public static String uranus;
     public static String neptune;
-
+    public static String pluto;
 
     public static void toEnglish()
     {
@@ -64,6 +64,7 @@ public class Languages
         tethys="   Tethys";
         uranus="Uranus";
         neptune="Neptune";
+        pluto="Pluto";
     }
 
     public static void toHebrew()
@@ -76,7 +77,7 @@ public class Languages
         height="גובה";
         planet="כוכב לכת";
         mercury="כוכב חמה/מרקורי";
-        venus="נוגה/מרקורי";
+        venus="נוגה/ונוס";
         earth="כדור הארץ";
         moon="   הירח";
         mars="מאדים";
@@ -97,5 +98,6 @@ public class Languages
         tethys="   טתיס";
         uranus="אורנוס";
         neptune="נפטון";
+        pluto="פלוטו";
     }
 }
