@@ -51,6 +51,21 @@
                 android:orientation="vertical">
 
                 <Button
+                    android:id="@+id/freeFallButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#CC6633"
+                    android:fontFamily="serif"
+                    android:text="נפילה חופשית"
+                    android:textColor="#070E51"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15px" />
+
+                <Button
                     android:id="@+id/pendulumButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
