@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
     {
-        menu.add(Languages.credits);
+        menu.add("Credits");
         menu.add("English");
         menu.add("עברית");
 
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity
     {
         String name=item.getTitle().toString();
 
-        if(name.equals(Languages.credits))
+        if(name.equals("Credits"))
         {
             Intent si=new Intent(this, CreditsActivity.class);
             startActivity(si);
