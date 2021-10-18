@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity
@@ -64,5 +65,11 @@ public class MainActivity extends AppCompatActivity
         pendulumButton.setText(Languages.pendulum);
         springButton.setText(Languages.springElongation);
         freeFallButton.setText(Languages.freeFall);
+    }
+
+    public void freeFall(View view)
+    {
+        Intent si=new Intent(this, freeFallData.class);
+        startActivity(si);
     }
 }
