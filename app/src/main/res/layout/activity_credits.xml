@@ -29,7 +29,7 @@
             android:fontFamily="serif"
             android:text="This app was made by Andriy Kuzmenko as a school project in computers for Garde 12."
             android:textColor="#030D40"
-            android:textSize="40sp"
+            android:textSize="35sp"
             android:textStyle="bold" />
 
         <Space
