@@ -63,5 +63,6 @@ public class MainActivity extends AppCompatActivity
     {
         pendulumButton.setText(Languages.pendulum);
         springButton.setText(Languages.springElongation);
+        freeFallButton.setText(Languages.freeFall);
     }
 }
