@@ -10,7 +10,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity
 {
-    Button pendulumButton, springButton;
+    Button pendulumButton, springButton, freeFallButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity
 
         pendulumButton=(Button)findViewById(R.id.pendulumButton);
         springButton=(Button)findViewById(R.id.springButton);
+        freeFallButton=(Button)findViewById(R.id.freeFallButton);
     }
 
     @Override
