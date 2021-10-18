@@ -18,5 +18,6 @@ public class freeFallData extends AppCompatActivity
 
         planetsView=(ListView)findViewById(R.id.plantesView);
         ArrayAdapter<String> adp=new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item,Languages.planets);
+        planetsView.setAdapter(adp);
     }
 }
