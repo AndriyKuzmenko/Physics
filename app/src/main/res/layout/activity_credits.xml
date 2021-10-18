@@ -25,11 +25,11 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="0px"
-            android:layout_weight="3"
+            android:layout_weight="5"
             android:fontFamily="serif"
             android:text="This app was made by Andriy Kuzmenko as a school project in computers for Garde 12."
             android:textColor="#030D40"
-            android:textSize="20sp"
+            android:textSize="40sp"
             android:textStyle="bold" />
 
         <Space
