@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Languages.toHebrew();
+
         pendulumButton=(Button)findViewById(R.id.pendulumButton);
         springButton=(Button)findViewById(R.id.springButton);
     }
@@ -24,6 +26,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
     {
+        menu.add("Credits");
         menu.add("English");
         menu.add("עברית");
 
@@ -34,7 +37,11 @@ public class MainActivity extends AppCompatActivity
     {
         String name=item.getTitle().toString();
 
-        if(name.equals("English"))
+        if(name.equals(Languages.credits))
+        {
+            return true;
+        }
+        else if(name.equals("English"))
         {
             Languages.toEnglish();
         }
