@@ -71,6 +71,48 @@
                 <Space
                     android:layout_width="match_parent"
                     android:layout_height="20px" />
+
+                <TextView
+                    android:id="@+id/heightLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="גובה"
+                    android:textColor="#080B53"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10px" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="18"
+                    android:inputType="number" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20px" />
+
+                <TextView
+                    android:id="@+id/planetLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="כוכב לכת: כדור הארץ"
+                    android:textColor="#080B53"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10px" />
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="500px" />
             </LinearLayout>
         </ScrollView>
 
