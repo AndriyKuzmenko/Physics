@@ -6,11 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class freeFallData extends AppCompatActivity
+public class freeFallData extends AppCompatActivity implements AdapterView.OnItemClickListener
 {
     ListView planetsView;
     TextView freeFallDataLabel, massLabel, heightLabel, planetLabel;
@@ -28,6 +30,8 @@ public class freeFallData extends AppCompatActivity
         planetLabel=(TextView)findViewById(R.id.planetLabel);
         planetsView=(ListView)findViewById(R.id.plantesView);
         planet=2;
+
+        planetsView.setOnItemClickListener(this);
 
         changeLanguage();
     }
@@ -69,9 +73,29 @@ public class freeFallData extends AppCompatActivity
         freeFallDataLabel.setText(Languages.freeFall);
         massLabel.setText(Languages.mass);
         heightLabel.setText(Languages.height);
-        planetLabel.setText(Languages.planet+": "+Languages.planets[planet]);
+        planetLabel.setText(Languages.planet+": "+Languages.planets[planet].trim());
 
         ArrayAdapter<String> adp=new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item,Languages.planets);
         planetsView.setAdapter(adp);
+    }
+
+    /**
+     * Callback method to be invoked when an item in this AdapterView has
+     * been clicked.
+     * <p>
+     * Implementers can call getItemAtPosition(position) if they need
+     * to access the data associated with the selected item.
+     *
+     * @param parent   The AdapterView where the click happened.
+     * @param view     The view within the AdapterView that was clicked (this
+     *                 will be a view provided by the adapter)
+     * @param position The position of the view in the adapter.
+     * @param id       The row id of the item that was clicked.
+     */
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id)
+    {
+        planet=position;
+        planetLabel.setText(Languages.planet+": "+Languages.planets[planet].trim());
     }
 }
