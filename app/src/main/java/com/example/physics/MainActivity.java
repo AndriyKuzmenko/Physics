@@ -29,9 +29,8 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
     {
+        getMenuInflater().inflate(R.menu.main,menu);
         menu.add("Credits");
-        menu.add("English");
-        menu.add("עברית");
 
         return true;
     }
