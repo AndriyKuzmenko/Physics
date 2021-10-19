@@ -30,26 +30,25 @@ public class MainActivity extends AppCompatActivity
     public boolean onCreateOptionsMenu(Menu menu)
     {
         getMenuInflater().inflate(R.menu.main,menu);
-        menu.add("Credits");
 
         return true;
     }
 
     public boolean onOptionsItemSelected(MenuItem item)
     {
-        String name=item.getTitle().toString();
+        int id=item.getItemId();
 
-        if(name.equals("Credits"))
+        if(id==R.id.Credits)
         {
             Intent si=new Intent(this, CreditsActivity.class);
             startActivity(si);
             return true;
         }
-        else if(name.equals("English"))
+        else if(id==R.id.English)
         {
             Languages.toEnglish();
         }
-        else if(name.equals("עברית"))
+        else if(id==R.id.Hebrew)
         {
             Languages.toHebrew();
         }
