@@ -119,7 +119,103 @@
                         android:layout_width="0px"
                         android:layout_height="match_parent"
                         android:layout_weight="2"
-                        android:orientation="vertical"></LinearLayout>
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200px"
+                            app:srcCompat="@drawable/planet1" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="20px" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200px"
+                            app:srcCompat="@drawable/planet2" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="20px" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200px"
+                            app:srcCompat="@drawable/planet3" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="20px" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200px"
+                            app:srcCompat="@drawable/planet4" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="20px" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200px"
+                            app:srcCompat="@drawable/planet5" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="20px" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200px"
+                            app:srcCompat="@drawable/planet6" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="20px" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200px"
+                            app:srcCompat="@drawable/planet7" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="20px" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200px"
+                            app:srcCompat="@drawable/planet8" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="20px" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200px"
+                            app:srcCompat="@drawable/planet9" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="20px" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180px"
+                            app:srcCompat="@drawable/planet10" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="20px" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180px"
+                            app:srcCompat="@drawable/planet11" />
+                    </LinearLayout>
 
                     <ListView
                         android:id="@+id/plantesView"
@@ -132,7 +228,103 @@
                         android:layout_width="0px"
                         android:layout_height="match_parent"
                         android:layout_weight="2"
-                        android:orientation="vertical"></LinearLayout>
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180px"
+                            app:srcCompat="@drawable/planet12" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="20px" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180px"
+                            app:srcCompat="@drawable/planet13" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="20px" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180px"
+                            app:srcCompat="@drawable/planet14" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="20px" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180px"
+                            app:srcCompat="@drawable/planet15" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="20px" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180px"
+                            app:srcCompat="@drawable/planet16" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="20px" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180px"
+                            app:srcCompat="@drawable/planet17" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="20px" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180px"
+                            app:srcCompat="@drawable/planet18" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="20px" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180px"
+                            app:srcCompat="@drawable/planet19" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="20px" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180px"
+                            app:srcCompat="@drawable/planet20" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="20px" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180px"
+                            app:srcCompat="@drawable/planet21" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="20px" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180px"
+                            app:srcCompat="@drawable/planet22" />
+                    </LinearLayout>
                 </LinearLayout>
 
             </LinearLayout>
