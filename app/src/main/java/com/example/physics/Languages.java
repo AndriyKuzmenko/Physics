@@ -32,7 +32,7 @@ public class Languages
     public static String uranus;
     public static String neptune;
     public static String pluto;
-    public static String[] planets={mercury,venus,earth,moon,mars,phobos,deimos,jupiter,ganymede,callisto,io,europa,himalia,amalthea,saturn,titan,rhea,iapetus,dione,tethys,uranus,neptune,pluto};
+    public static String[] planets;
 
     public static void toEnglish()
     {
@@ -66,6 +66,7 @@ public class Languages
         uranus="Uranus";
         neptune="Neptune";
         pluto="Pluto";
+        planets=new String[]{mercury, venus, earth, moon, mars, phobos, deimos, jupiter, ganymede, callisto, io, europa, himalia, amalthea, saturn, titan, rhea, iapetus, dione, tethys, uranus, neptune, pluto};
     }
 
     public static void toHebrew()
@@ -100,5 +101,6 @@ public class Languages
         uranus="אורנוס";
         neptune="נפטון";
         pluto="פלוטו";
+        planets=new String[]{mercury, venus, earth, moon, mars, phobos, deimos, jupiter, ganymede, callisto, io, europa, himalia, amalthea, saturn, titan, rhea, iapetus, dione, tethys, uranus, neptune, pluto};
     }
 }
