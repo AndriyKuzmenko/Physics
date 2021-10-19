@@ -79,7 +79,7 @@
                     android:fontFamily="serif"
                     android:text="גובה"
                     android:textColor="#080B53"
-                    android:textSize="18sp"
+                    android:textSize="15dp"
                     android:textStyle="bold" />
 
                 <Space
@@ -123,7 +123,7 @@
 
                         <ImageView
                             android:layout_width="match_parent"
-                            android:layout_height="200px"
+                            android:layout_height="180px"
                             app:srcCompat="@drawable/planet1" />
 
                         <Space
@@ -132,7 +132,7 @@
 
                         <ImageView
                             android:layout_width="match_parent"
-                            android:layout_height="200px"
+                            android:layout_height="180px"
                             app:srcCompat="@drawable/planet2" />
 
                         <Space
@@ -141,7 +141,7 @@
 
                         <ImageView
                             android:layout_width="match_parent"
-                            android:layout_height="200px"
+                            android:layout_height="180px"
                             app:srcCompat="@drawable/planet3" />
 
                         <Space
@@ -150,7 +150,7 @@
 
                         <ImageView
                             android:layout_width="match_parent"
-                            android:layout_height="200px"
+                            android:layout_height="180px"
                             app:srcCompat="@drawable/planet4" />
 
                         <Space
@@ -159,7 +159,7 @@
 
                         <ImageView
                             android:layout_width="match_parent"
-                            android:layout_height="200px"
+                            android:layout_height="180px"
                             app:srcCompat="@drawable/planet5" />
 
                         <Space
@@ -168,7 +168,7 @@
 
                         <ImageView
                             android:layout_width="match_parent"
-                            android:layout_height="200px"
+                            android:layout_height="180px"
                             app:srcCompat="@drawable/planet6" />
 
                         <Space
@@ -177,7 +177,7 @@
 
                         <ImageView
                             android:layout_width="match_parent"
-                            android:layout_height="200px"
+                            android:layout_height="180px"
                             app:srcCompat="@drawable/planet7" />
 
                         <Space
@@ -186,7 +186,7 @@
 
                         <ImageView
                             android:layout_width="match_parent"
-                            android:layout_height="200px"
+                            android:layout_height="180px"
                             app:srcCompat="@drawable/planet8" />
 
                         <Space
@@ -195,7 +195,7 @@
 
                         <ImageView
                             android:layout_width="match_parent"
-                            android:layout_height="200px"
+                            android:layout_height="180px"
                             app:srcCompat="@drawable/planet9" />
 
                         <Space
@@ -222,7 +222,8 @@
                         android:layout_width="0px"
                         android:layout_height="2200px"
                         android:layout_weight="5"
-                        android:background="#FFFFFF" />
+                        android:background="#FFFFFF"
+                        android:isScrollContainer="false"/>
 
                     <LinearLayout
                         android:layout_width="0px"
