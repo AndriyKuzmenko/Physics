@@ -26,11 +26,8 @@ public class freeFallData extends AppCompatActivity
         massLabel=(TextView)findViewById(R.id.massLabel);
         heightLabel=(TextView)findViewById(R.id.heightLabel);
         planetLabel=(TextView)findViewById(R.id.planetLabel);
-        planet=2;
-
         planetsView=(ListView)findViewById(R.id.plantesView);
-        ArrayAdapter<String> adp=new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item,Languages.planets);
-        planetsView.setAdapter(adp);
+        planet=2;
 
         changeLanguage();
     }
@@ -73,5 +70,8 @@ public class freeFallData extends AppCompatActivity
         massLabel.setText(Languages.mass);
         heightLabel.setText(Languages.height);
         planetLabel.setText(Languages.planet+": "+Languages.planets[planet]);
+
+        ArrayAdapter<String> adp=new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item,Languages.planets);
+        planetsView.setAdapter(adp);
     }
 }
