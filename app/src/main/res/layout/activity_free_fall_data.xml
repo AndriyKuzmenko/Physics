@@ -113,7 +113,7 @@
                 <ListView
                     android:id="@+id/plantesView"
                     android:layout_width="match_parent"
-                    android:layout_height="500px" />
+                    android:layout_height="2200px" />
             </LinearLayout>
         </ScrollView>
 
