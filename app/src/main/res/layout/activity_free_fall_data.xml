@@ -223,7 +223,8 @@
                         android:layout_height="2200px"
                         android:layout_weight="5"
                         android:background="#FFFFFF"
-                        android:isScrollContainer="false"/>
+                        android:isScrollContainer="false" >
+                    </ListView>
 
                     <LinearLayout
                         android:layout_width="0px"
@@ -327,6 +328,11 @@
                             app:srcCompat="@drawable/planet22" />
                     </LinearLayout>
                 </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Start" />
 
             </LinearLayout>
         </ScrollView>
