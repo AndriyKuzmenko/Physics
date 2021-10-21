@@ -1,7 +1,9 @@
 package com.example.physics;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -19,6 +21,7 @@ public class freeFallData extends AppCompatActivity implements AdapterView.OnIte
     ListView planetsView;
     TextView freeFallDataLabel, massLabel, heightLabel, planetLabel;
     EditText massET, heightET;
+    AlertDialog.Builder adb;
     int planet;
 
     @Override
@@ -106,13 +109,48 @@ public class freeFallData extends AppCompatActivity implements AdapterView.OnIte
 
     public void start(View view)
     {
+        if(planet==2)
+        {
+            adb=new AlertDialog.Builder(this);
+            adb.setMessage("You have chosen Planet Earth. Do you want to substitute g=10 or g=9.807?");
+
+            adb.setPositiveButton("9.907", new DialogInterface.OnClickListener()
+            {
+                @Override
+                public void onClick(DialogInterface dialog, int which)
+                {
+                    startAnimation(false);
+                }
+            });
+
+            adb.setNegativeButton("10", new DialogInterface.OnClickListener()
+            {
+                @Override
+                public void onClick(DialogInterface dialog, int which)
+                {
+                    startAnimation(true);
+                }
+            });
+
+            AlertDialog ad=adb.create();
+            ad.show();
+        }
+        else
+        {
+            startAnimation(false);
+        }
+    }
+
+    public void startAnimation(boolean b)
+    {
         Intent si=new Intent(this, FreeFallAnimation.class);
 
         Log.i("TAG","planet="+planet+", g="+Languages.gravity[planet]);
 
         si.putExtra("mass",Integer.parseInt(massET.getText().toString()));
         si.putExtra("height",Integer.parseInt(heightET.getText().toString()));
-        si.putExtra("planet",planet);
+        if(b) si.putExtra("planet",-1);
+        else     si.putExtra("planet",planet);
 
         startActivity(si);
     }
