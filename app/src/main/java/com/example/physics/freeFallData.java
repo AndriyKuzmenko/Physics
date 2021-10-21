@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -106,6 +107,8 @@ public class freeFallData extends AppCompatActivity implements AdapterView.OnIte
     public void start(View view)
     {
         Intent si=new Intent(this, FreeFallAnimation.class);
+
+        Log.i("TAG","planet="+planet+", g="+Languages.gravity[planet]);
 
         si.putExtra("mass",Integer.parseInt(massET.getText().toString()));
         si.putExtra("height",Integer.parseInt(heightET.getText().toString()));
