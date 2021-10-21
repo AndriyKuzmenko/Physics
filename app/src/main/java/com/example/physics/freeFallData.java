@@ -112,7 +112,7 @@ public class freeFallData extends AppCompatActivity implements AdapterView.OnIte
         if(planet==2)
         {
             adb=new AlertDialog.Builder(this);
-            adb.setMessage("You have chosen Planet Earth. Do you want to substitute g=10 or g=9.807?");
+            adb.setMessage(Languages.whatIsTheGravityOfEarth);
 
             adb.setPositiveButton("9.907", new DialogInterface.OnClickListener()
             {
