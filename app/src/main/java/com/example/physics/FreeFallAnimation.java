@@ -1,6 +1,8 @@
 package com.example.physics;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.BounceInterpolator;
@@ -17,14 +19,19 @@ public class FreeFallAnimation extends AppCompatActivity
 
         ImageView imageView = (ImageView) findViewById(R.id.ball);
 
+        Intent gi = getIntent();
+        double mass=gi.getIntExtra("mass",0); //will be used in the table to calculate energy
+        double height=gi.getIntExtra("height",0);
+        double gravity=gi.getIntExtra("gravity",0);
+        double time=Math.sqrt(2*height/gravity);
+
         float bottomOfScreen = getResources().getDisplayMetrics()
                 .heightPixels - (imageView.getHeight() * 4);
-        //bottomOfScreen is where you want to animate to
 
         imageView.animate()
                 .translationY(bottomOfScreen)
                 .setInterpolator(new AccelerateInterpolator())
                 .setInterpolator(new BounceInterpolator())
-                .setDuration(2000);
+                .setDuration((long)(time*1000));
     }
 }

@@ -63,6 +63,7 @@
                     android:layout_height="10px" />
 
                 <EditText
+                    android:id="@+id/massET"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="18"
@@ -87,6 +88,7 @@
                     android:layout_height="10px" />
 
                 <EditText
+                    android:id="@+id/heightET"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="18"

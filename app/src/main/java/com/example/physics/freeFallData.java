@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -16,6 +17,7 @@ public class freeFallData extends AppCompatActivity implements AdapterView.OnIte
 {
     ListView planetsView;
     TextView freeFallDataLabel, massLabel, heightLabel, planetLabel;
+    EditText massET, heightET;
     int planet;
 
     @Override
@@ -29,6 +31,8 @@ public class freeFallData extends AppCompatActivity implements AdapterView.OnIte
         heightLabel=(TextView)findViewById(R.id.heightLabel);
         planetLabel=(TextView)findViewById(R.id.planetLabel);
         planetsView=(ListView)findViewById(R.id.plantesView);
+        massET=(EditText)findViewById(R.id.massET);
+        heightET=(EditText)findViewById(R.id.heightET);
         planet=2;
 
         planetsView.setOnItemClickListener(this);
@@ -102,6 +106,11 @@ public class freeFallData extends AppCompatActivity implements AdapterView.OnIte
     public void start(View view)
     {
         Intent si=new Intent(this, FreeFallAnimation.class);
+
+        si.putExtra("mass",Integer.parseInt(massET.getText().toString()));
+        si.putExtra("height",Integer.parseInt(heightET.getText().toString()));
+        si.putExtra("gravity",Languages.gravity[planet]);
+
         startActivity(si);
     }
 }
