@@ -29,12 +29,11 @@ public class FreeFallAnimation extends AppCompatActivity
         Log.i("TAG","m="+mass+", h="+height+", g="+gravity+", t="+time);
 
         float bottomOfScreen = getResources().getDisplayMetrics()
-                .heightPixels - (imageView.getHeight() * 4);
+                .heightPixels - 64*5;
 
         imageView.animate()
                 .translationY(bottomOfScreen)
                 .setInterpolator(new AccelerateInterpolator())
-                .setInterpolator(new BounceInterpolator())
                 .setDuration((long)(time*1000));
     }
 }
