@@ -98,4 +98,10 @@ public class freeFallData extends AppCompatActivity implements AdapterView.OnIte
         planet=position;
         planetLabel.setText(Languages.planet+": "+Languages.planets[planet].trim());
     }
+
+    public void start(View view)
+    {
+        Intent si=new Intent(this, FreeFallAnimation.class);
+        startActivity(si);
+    }
 }
