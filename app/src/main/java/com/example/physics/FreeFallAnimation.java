@@ -23,7 +23,7 @@ public class FreeFallAnimation extends AppCompatActivity
         Intent gi = getIntent();
         double mass=gi.getIntExtra("mass",0); //will be used in the table to calculate energy
         double height=gi.getIntExtra("height",0);
-        double gravity=gi.getIntExtra("gravity",0);
+        double gravity=Languages.gravity[gi.getIntExtra("planet",0)];
         double time=Math.sqrt(2*height/gravity);
 
         Log.i("TAG","m="+mass+", h="+height+", g="+gravity+", t="+time);

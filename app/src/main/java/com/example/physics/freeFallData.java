@@ -112,7 +112,7 @@ public class freeFallData extends AppCompatActivity implements AdapterView.OnIte
 
         si.putExtra("mass",Integer.parseInt(massET.getText().toString()));
         si.putExtra("height",Integer.parseInt(heightET.getText().toString()));
-        si.putExtra("gravity",Languages.gravity[planet]);
+        si.putExtra("planet",planet);
 
         startActivity(si);
     }
