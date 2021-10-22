@@ -67,7 +67,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="18"
-                    android:inputType="number" />
+                    android:inputType="number|numberDecimal" />
 
                 <Space
                     android:layout_width="match_parent"
@@ -92,7 +92,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="18"
-                    android:inputType="number" />
+                    android:inputType="number|numberDecimal" />
 
                 <Space
                     android:layout_width="match_parent"
