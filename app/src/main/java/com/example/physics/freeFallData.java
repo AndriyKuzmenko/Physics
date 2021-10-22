@@ -114,7 +114,7 @@ public class freeFallData extends AppCompatActivity implements AdapterView.OnIte
             adb=new AlertDialog.Builder(this);
             adb.setMessage(Languages.whatIsTheGravityOfEarth);
 
-            adb.setPositiveButton("9.907", new DialogInterface.OnClickListener()
+            adb.setPositiveButton("9.807", new DialogInterface.OnClickListener()
             {
                 @Override
                 public void onClick(DialogInterface dialog, int which)
